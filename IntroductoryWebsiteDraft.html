@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Lucas Koh</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <style>
+    .hero-section {
+        background-image: 
+            linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+            url('IntroMainBg.jpeg');
+        
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed; /* 🔥 THIS is the key */
+
+        color: white;
+        min-height: 100vh;
+        padding: 100px 0;
+    }
+        /* Custom Utility Class */
+    .bg-midnight {
+        background-color: rgba(15, 26, 36, 0.85) !important; /* Deep Blue */
+        backdrop-filter: blur(10px); /* Modern 'Glass' effect */
+        -webkit-backdrop-filter: blur(10px);
+    }
+
+    /* Optional: Matching text utility */
+    .text-mist {
+        color: #B0C4DE !important; /* Light Steel Blue */
+    }
+
+    /* Custom Blue Theme */
+.hero-container {
+  background-color: rgba(20, 33, 45, 0.8) !important;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 40px;
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.navbar-custom {
+    background-color: #0F1A24 !important; /* Slightly darker than the container */
+}
+
+/* For your GitHub/LinkedIn icons */
+.nav-link i {
+    color: #749BC2;
+    transition: 0.3s;
+}
+
+.nav-link i:hover {
+    color: #A0D2EB; /* Lighter glow on hover */
+}
+
+/* Custom Midnight Navbar */
+.navbar-midnight {
+    background-color: rgb(15, 26, 36) !important; /* Solid Midnight Blue */
+    border-bottom: 1px solid rgba(176, 196, 222, 0.2); /* Subtle divider */
+}
+
+/* Navbar Link Colors (Mist) */
+.navbar-midnight .nav-link {
+    color: rgb(176, 196, 222) !important; 
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+/* Hover State (Ice Blue) */
+.navbar-midnight .nav-link:hover {
+    color: rgb(248, 249, 250) !important; /* Brighter on hover */
+    text-shadow: 0 0 10px rgba(160, 210, 235, 0.4);
+}
+
+/* Brand Name (White) */
+.navbar-midnight .navbar-brand {
+    color: rgb(248, 249, 250) !important;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-sm bg-midnight navbar-custom navbar-midnight sticky-top">
+  <div class="container-fluid" id="home-section">
+    <a class="navbar-brand" href="#">Lucas Koh</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#about-me-section">About Me</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Projects</a>
+        </li>    
+        <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+        </li>  
+        <li class="nav-item">
+            <a class="nav-link" href="https://www.linkedin.com/in/lucas-koh-a4261b339" target="_blank">
+            <i class="bi bi-linkedin" style="font-size: 1.3rem;"></i>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="https://github.com/Luc45K0h75" target="_blank">
+            <i class="bi bi-github" style="font-size: 1.3rem;"></i>
+        </a>
+</li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="hero-section text-center">
+    <div class="container-fluid p-5 my-5 bg-midnight text-midst opacity-75">
+        <h1 class="display-1 text-center">Lucas Koh</h1>
+        <p class="lead">Bachelor of Engineering (Honours) and Bachelor of Philosophy (Honours) at UWA.</p>
+        <p class="lead">Majoring in Electrical and Electronic Engineering and Computer Science.</p>
+    </div>
+    <div class="container-fluid p-5 py-5 bg-midnight text-mist" id="about-me-section">
+        <div class="row">
+            <div class="col-md-4">
+                <img src="AboutMePicture.jpeg" alt="Lucas Koh" class="img-fluid rounded w=50">
+            </div>
+            <div class="col-md-8">
+                <h2 class ="text-start">About Me</h2>
+                <p class="text-start">Hi there! I'm Lucas,</p>
+                <p class="text-start">This section is dedicated to a giving a few details about me, for more please visit my <a href="https://www.linkedin.com/in/lucas-koh-a4261b339" target="_blank" class="text-decoration-underline"></a>LinkedIn</a>. </p>
+                <h3 class="text-start">Education</h3>
+                <p class="text-start">I am currently studying a combined Bachelor of Philosophy (Honours) and Bachelor of Engineering (Honours), majoring in Computer Science and Electrical and Electronic Engineering at the University of Western Australia. My course is five-and-a-half-years-long and I am set to graduate in June 2029. Next year, I am set to go on exchange to hopefully either the National University of Singapore or the University of Hong Kong for an exchange semester. When I graduate, I seek to immediately do my masters overseas at a good school.</p>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>
