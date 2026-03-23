@@ -1,0 +1,66 @@
+h1 {
+    color: black;
+    text-align: center;
+}
+
+table, th, td {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  border-collapse: collapse;
+  padding: 10px;
+}
+
+table {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  border:3px red solid;
+  border-radius: 26px;
+}
+
+td:hover, th:hover {
+  border:3px red solid;
+}
+
+.rank {
+    color: white;
+    background-color: black;
+    text-align: center;
+}
+
+.country {
+    color: black;
+    background-color: white;
+    text-align: left;
+}
+
+.gold {
+    color: black;
+    background-color: gold;
+    text-align: center;
+}
+
+.silver {
+    color: black;
+    background-color: silver;
+    text-align:  center;
+}
+
+.bronze {
+    color: black;
+    background-color: #cd7f32;
+    text-align: center;
+}
+
+.total {
+    color: black;
+    background-color: green;
+    text-align: center;
+}
+
+#headings {
+    color: black;
+    text-align: center;
+    font-size: 25px;
+    background-color: lightgray;
+}
