@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Lucas Koh</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <style>
+    .hero-section {
+        background-image: 
+            linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+            url('IntroMainBg.jpeg');
+        
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed; /* 🔥 THIS is the key */
+
+        color: white;
+        min-height: 100vh;
+        padding: 100px 0;
+    }
+        /* Custom Utility Class */
+    .bg-midnight {
+        background-color: rgba(15, 26, 36, 0.85) !important; /* Deep Blue */
+        backdrop-filter: blur(10px); /* Modern 'Glass' effect */
+        -webkit-backdrop-filter: blur(10px);
+    }
+
+    /* Optional: Matching text utility */
+    .text-mist {
+        color: #B0C4DE !important; /* Light Steel Blue */
+    }
+
+    /* Custom Blue Theme */
+.hero-container {
+  background-color: rgba(20, 33, 45, 0.8) !important;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 40px;
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.navbar-custom {
+    background-color: #0F1A24 !important; /* Slightly darker than the container */
+}
+
+/* For your GitHub/LinkedIn icons */
+.nav-link i {
+    color: #749BC2;
+    transition: 0.3s;
+}
+
+.nav-link i:hover {
+    color: #A0D2EB; /* Lighter glow on hover */
+}
+
+/* Custom Midnight Navbar */
+.navbar-midnight {
+    background-color: rgb(15, 26, 36) !important; /* Solid Midnight Blue */
+    border-bottom: 1px solid rgba(176, 196, 222, 0.2); /* Subtle divider */
+}
+
+/* Navbar Link Colors (Mist) */
+.navbar-midnight .nav-link {
+    color: rgb(176, 196, 222) !important; 
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+/* Hover State (Ice Blue) */
+.navbar-midnight .nav-link:hover {
+    color: rgb(248, 249, 250) !important; /* Brighter on hover */
+    text-shadow: 0 0 10px rgba(160, 210, 235, 0.4);
+}
+
+/* Brand Name (White) */
+.navbar-midnight .navbar-brand {
+    color: rgb(248, 249, 250) !important;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-sm bg-midnight navbar-custom navbar-midnight sticky-top">
+  <div class="container-fluid" id="home-section">
+    <a class="navbar-brand" href="#">Lucas Koh</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link" href="IntroductoryWebsiteDraft.html#home-section">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="IntroductoryWebsiteDraft.html#about-me-section">About Me</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Projects</a>
+        </li>    
+        <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+        </li>  
+        <li class="nav-item">
+            <a class="nav-link" href="https://www.linkedin.com/in/lucas-koh-a4261b339" target="_blank">
+            <i class="bi bi-linkedin" style="font-size: 1.3rem;"></i>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="https://github.com/Luc45K0h75" target="_blank">
+            <i class="bi bi-github" style="font-size: 1.3rem;"></i>
+        </a>
+</li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="hero-section text-center">
+    <div class="container-fluid p-5 my-5 bg-midnight text-midst opacity-75">
+        <h1 class="display-1 text-center">My Projects</h1>
+    </div>
+
+    <div class="container-fluid p-5 py-5 my-5 bg-midnight text-mist" id="about-me-section">
+        <div class="row">
+            <h1 class="text-center">Kidney Stone CT Scan Image Detector</h1>
+            <h2 class="text-start">Project Status</h2>
+            <p class="text-start">Completion Status: Almost completed, Estimated Finish: June/July 2026</p>
+            <h2 class="text-start">Project Aim</h2>
+            <p class="text-start">The goal of this project is to create a convolution neural network (CNN) without a pretrained base that can accurately detect whether or not a kidney stone exists in a CT scan.</p>
+            <h2 class="text-start">Project Dataset</h2>
+            <p class="text-start">The dataset I am using is the Axial CT Imaging Dataset (Kidney Stone Detection) by Abdalla et al. that contains a total of 38,821 images, 3364 of which are original images of CT scans sourced from medical centers in Sulaimani and Rania, Kurdistan Region, Iraq as well as 35,457 additional augmented images. (Abdalla et al., 2025) I chose this dataset due to the large number images which can help the model to recognise clear patterns amongst scans. This helps in reducing underfitting as it allows for the indentification of common patterns which helps minimise noise and increase common feature recognition. Having a large variety of variable images helps the model get used to many different and variable features that can be used to detect images in Kidney Stones which in turn helps to counter overfitting. Additionally, the presence of augmented images helps decrease overfitting as it makes feature recognition better through exposing the model to altered versions of the same image. This makes it harder for the model to memorise and makes it better at generalising. (Holbrook, Cook, 2023).</p>
+            <h2 class="text-start">Project Libraries</h2>
+            <p class="text-start">The following libraries are being used in this project:</p>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item list-group-item-info">TensorFlow (Keras)</li>
+                <li class="list-group-item list-group-item-info">NumPy</li>
+                <li class="list-group-item list-group-item-info">Pandas</li>
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
