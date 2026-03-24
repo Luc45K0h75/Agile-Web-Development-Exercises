@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Lucas Koh</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <style>
+    .hero-section {
+        background-image: 
+            linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+            url('IntroMainBg.jpeg');
+        
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed; /* 🔥 THIS is the key */
+
+        color: white;
+        min-height: 100vh;
+        padding: 100px 0;
+    }
+        /* Custom Utility Class */
+    .bg-midnight {
+        background-color: rgba(15, 26, 36, 0.85) !important; /* Deep Blue */
+        backdrop-filter: blur(10px); /* Modern 'Glass' effect */
+        -webkit-backdrop-filter: blur(10px);
+    }
+
+    /* Optional: Matching text utility */
+    .text-mist {
+        color: #B0C4DE !important; /* Light Steel Blue */
+    }
+
+    .carousel-inner {
+        max-height: 70vh; /* Carousel will be at most 70% of viewport height */
+    }
+
+    .carousel-inner img {
+         width: 100%;       /* Full width */
+        height: auto;       /* Keep natural height */
+        max-height: 70vh;   /* Limit height to 70% of viewport */
+        object-fit: contain; /* Fit inside container, no cropping */
+        display: block;     /* Remove inline spacing */
+        margin: 0 auto;     /* Center image horizontally */
+    }   
+
+    /* Custom Blue Theme */
+.hero-container {
+  background-color: rgba(20, 33, 45, 0.8) !important;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 40px;
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.navbar-custom {
+    background-color: #0F1A24 !important; /* Slightly darker than the container */
+}
+
+/* For your GitHub/LinkedIn icons */
+.nav-link i {
+    color: #749BC2;
+    transition: 0.3s;
+}
+
+.nav-link i:hover {
+    color: #A0D2EB; /* Lighter glow on hover */
+}
+
+/* Custom Midnight Navbar */
+.navbar-midnight {
+    background-color: rgb(15, 26, 36) !important; /* Solid Midnight Blue */
+    border-bottom: 1px solid rgba(176, 196, 222, 0.2); /* Subtle divider */
+}
+
+/* Navbar Link Colors (Mist) */
+.navbar-midnight .nav-link {
+    color: rgb(176, 196, 222) !important; 
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+/* Hover State (Ice Blue) */
+.navbar-midnight .nav-link:hover {
+    color: rgb(248, 249, 250) !important; /* Brighter on hover */
+    text-shadow: 0 0 10px rgba(160, 210, 235, 0.4);
+}
+
+/* Brand Name (White) */
+.navbar-midnight .navbar-brand {
+    color: rgb(248, 249, 250) !important;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+  </style>
+</head>
+<body>
+
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+<nav class="navbar navbar-expand-sm bg-midnight navbar-custom navbar-midnight sticky-top">
+  <div class="container-fluid" id="home-section">
+    <a class="navbar-brand" href="#">Lucas Koh</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link" href="IntroductoryWebsiteDraft.html#home-section">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="IntroductoryWebsiteDraft.html#about-me-section">About Me</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="IntroductoryWebsiteProjectsDraft.html">Projects</a>
+        </li>    
+        <li class="nav-item">
+            <a class="nav-link" href="BestPhotos.html">Photos</a>
+        </li> 
+        <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+        </li>
+           
+        <li class="nav-item">
+            <a class="nav-link" href="https://www.linkedin.com/in/lucas-koh-a4261b339" target="_blank">
+            <i class="bi bi-linkedin" style="font-size: 1.3rem;"></i>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="https://github.com/Luc45K0h75" target="_blank">
+            <i class="bi bi-github" style="font-size: 1.3rem;"></i>
+        </a>
+</li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="hero-section text-center">
+<div class="container-fluid p-5 py-5 my-5 bg-midnight text-mist" id="photos-section">
+<!-- Carousel -->
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+    
+
+    <!-- Indicators/dots -->
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="5"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="6"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="7"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="8"></button>
+    </div>
+     </div>
+
+    <!-- The slideshow/carousel -->
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="BestPhotos/DaLat.jpeg" alt="Da Lat" class="d-block w-100">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Da Lat, Vietnam</h5>
+                <p>Photo taken in Da Lat, a city in the Central Highlands of Vietnam known for its beautiful landscapes and cool climate.</p>
+            </div>  
+        </div>
+        <div class="carousel-item">
+            <img src="BestPhotos/SF.jpeg" alt="San Francisco" class="d-block w-100">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>San Francisco, USA</h5>
+                <p>Photo taken in San Francisco, a city in California known for its iconic Golden Gate Bridge and diverse culture.</p>
+            </div>  
+        </div>
+        <div class="carousel-item">
+            <img src="BestPhotos/SiemReap.jpeg" alt="Siem Reap" class="d-block w-100">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Siem Reap, Cambodia</h5>
+                <p>Photo taken in Siem Reap, a city in northwestern Cambodia known for its proximity to the Angkor Wat temple complex.</p>
+            </div>  
+        </div>
+        <div class="carousel-item">
+            <img src="BestPhotos/Vancouver.jpeg" alt="Vancouver" class="d-block w-100">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Vancouver, Canada</h5>
+                <p>Photo taken in Vancouver, a city in British Columbia, Canada known for its beautiful landscapes and vibrant culture.</p>
+            </div>  
+        </div>
+        <div class="carousel-item">
+            <img src="BestPhotos/NinhBinh.jpeg" alt="Ninh Binh" class="d-block w-100">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Ninh Binh, Vietnam</h5>
+                <p>Photo taken in Ninh Binh, a province in northern Vietnam known for its stunning natural landscapes and cultural heritage. This is where my grandma comes from.</p>
+            </div>  
+        </div>
+        <div class="carousel-item">
+            <img src="BestPhotos/Singapore.jpeg" alt="Singapore" class="d-block w-100">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Singapore</h5>
+                <p>Photo taken in Singapore, a city-state in Southeast Asia known for its vibrant culture and modern architecture.</p>
+            </div>  
+        </div>
+        <div class="carousel-item">
+            <img src="BestPhotos/Madrid.jpeg" alt="Madrid" class="d-block w-100">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Madrid, Spain</h5>
+                <p>Photo taken in Madrid, the capital city of Spain known for its rich history, vibrant culture, and world-class museums.</p>
+            </div>  
+        </div>
+        <div class="carousel-item">
+            <img src="BestPhotos/Saigon.jpg" alt="Saigon" class="d-block w-100">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Saigon, Vietnam</h5>
+                <p>Photo taken in Saigon, the largest city in Vietnam known for its bustling streets and rich cultural heritage.</p>
+            </div>  
+        </div>
+        <div class="carousel-item">
+            <img src="BestPhotos/Perth.jpeg" alt="Home City" class="d-block w-100">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Perth, Australia</h5>
+                <p>Photo taken in my home city of Perth, the capital city of Western Australia known for its beautiful beaches and vibrant cultural scene.</p>
+            </div>  
+        </div>
+    </div>
+
+    <!-- Left and right controls/icons -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </button>
+</div>
+</div>
+</div>
+</div>
+</body>
